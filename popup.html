@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Shield</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Shield</h1>
+    <p class="subtitle">Ad & Tracker Blocker</p>
+
+    <div class="status">
+      <span id="statusDot"></span>
+      <span id="statusText">Checking...</span>
+    </div>
+
+    <button id="toggleButton">Loading...</button>
+
+    <div class="stats">
+      <div class="count" id="blockedCount">0</div>
+      <div class="label">Blocked requests</div>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

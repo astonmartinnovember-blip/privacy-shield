@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Shield - Ad & Tracker Blocker",
+  "version": "1.1.0",
+  "description": "A lightweight privacy-focused ad and tracker blocker with YouTube ad filtering.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Privacy Shield"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules/rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

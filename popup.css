@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #18202a;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.subtitle {
+  margin: 6px 0 18px;
+  color: #667085;
+  font-size: 13px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+#statusDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #98a2b3;
+}
+
+#statusDot.on {
+  background: #12b76a;
+}
+
+#statusDot.off {
+  background: #f04438;
+}
+
+#toggleButton {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#toggleButton.on {
+  background: #18202a;
+  color: white;
+}
+
+#toggleButton.off {
+  background: #e4e7ec;
+  color: #18202a;
+}
+
+.stats {
+  margin-top: 18px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.count {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.label {
+  margin-top: 4px;
+  color: #667085;
+  font-size: 12px;
+}
+
+#message {
+  min-height: 16px;
+  margin: 12px 0 0;
+  color: #667085;
+  font-size: 11px;
+  text-align: center;
+}
